@@ -1,0 +1,174 @@
+
+.conten_tarjeta{
+    min-height: 100vh;
+    background: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    padding-bottom: 60px;
+}
+
+.conten_tarjeta form{
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 10px 15px rgba(0,0,0,.1);
+    padding: 20px;
+    width: 800px;
+    padding-top: 180px;
+}
+
+
+.conten_tarjeta form .inputBox{
+    margin-top: 20px;
+}
+
+
+.conten_tarjeta form .inputBox span{
+    display: block;
+    color:#161515;
+    padding-bottom: 8px;
+}
+
+
+.conten_tarjeta form .inputBox input,
+
+.conten_tarjeta form .inputBox select{
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border:1px solid rgba(0,0,0,.3);
+    color:#080808;
+}
+
+
+.conten_tarjeta form .flexbox{
+    display: flex;
+    gap:35px;
+}
+
+
+.conten_tarjeta form .flexbox .inputBox{
+    flex:1 1 150px;
+}
+
+
+.conten_tarjeta form .submit-btn{
+    width: 100%;
+    background:linear-gradient(45deg, rgb(43, 217, 226), rgb(37, 61, 160));
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 20px;
+    color:#fff;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .2s linear;
+}
+
+.conten_tarjeta form .submit-btn:hover{
+    letter-spacing: 2px;
+    opacity: .8;
+}
+
+.conten_tarjeta .conten_tarjeta1{
+    margin-top:30px ;
+    margin-bottom: -150px;
+    position: relative;
+    height: 300px;
+    width: 600px;
+}
+
+.conten_tarjeta .conten_tarjeta1 .front{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0; left: 0;
+    background:linear-gradient(45deg, rgb(71, 194, 232), rgb(39, 120, 251));
+    border-radius: 5px;
+    backface-visibility: hidden;
+    box-shadow: 0 15px 25px rgba(0,0,0,.2);
+    padding:20px;
+    transform:perspective(1000px) rotateY(20deg);
+    transition:transform .4s ease-out;
+}
+
+.conten_tarjeta .conten_tarjeta1 .front .image{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+.conten_tarjeta .conten_tarjeta1 .front .image img{
+    height: 50px;
+}
+
+.conten_tarjeta .conten_tarjeta1 .front .card-number-box{
+    padding:30px 0;
+    font-size: 22px;
+    color:#fff;
+}
+
+.conten_tarjeta .conten_tarjeta1 .front .flexbox{
+    display: flex;
+}
+
+.conten_tarjeta .conten_tarjeta1 .front .flexbox .box:nth-child(1){
+    margin-right: auto;
+}
+
+.conten_tarjeta .conten_tarjeta1 .front .flexbox .box{
+    font-size: 20px;
+    color:#fff;
+    background-color: transparent;
+}
+
+.conten_tarjeta .conten_tarjeta1 .back{
+    position: absolute;
+    top:0; left: 0;
+    height: 100%;
+    width: 100%;
+    background:linear-gradient(45deg, rgb(19, 198, 195), rgb(28, 111, 243));
+    border-radius: 5px;
+    padding: 20px 0;
+    text-align: right;
+    backface-visibility: hidden;
+    box-shadow: 0 15px 25px rgba(0,0,0,.2);
+    transform:perspective(1000px) rotateY(180deg);
+    transition:transform .4s ease-out;
+}
+
+.conten_tarjeta .conten_tarjeta1 .back .stripe{
+    background: #000;
+    width: 100%;
+    margin: 10px 0;
+    height: 50px;
+}
+
+.conten_tarjeta .conten_tarjeta1 .back .box{
+    padding: 0 20px;
+    background-color: transparent;
+}
+
+.conten_tarjeta .conten_tarjeta1 .back .box span{
+    color:#fff;
+    font-size: 15px;
+    margin-left: 400px;
+    
+}
+
+.conten_tarjeta .conten_tarjeta1 .back .box .cvv-box{
+    height: 50px;
+    padding: 10px;
+    margin-top: 5px;
+    color:#333;
+    background: #fff;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.conten_tarjeta .conten_tarjeta1 .back .box img{
+    margin-top: 10px;
+    margin-left: 380px;
+    height: 50px;
+}
